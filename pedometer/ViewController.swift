@@ -9,10 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var stepsLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    func layout() {
+        // 歩数のレイアウトを変更
+        stepsLabel.layer.borderColor = UIColor.orange.cgColor
+        stepsLabel.layer.borderWidth = 1
+        stepsLabel.layer.cornerRadius = 8
+        stepsLabel.layer.masksToBounds = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.layout()
     }
 
     override func didReceiveMemoryWarning() {

@@ -418,7 +418,7 @@
 				DEVELOPMENT_TEAM = F8WVNF9WH2;
 				INFOPLIST_FILE = pedometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.malfoy.pedometer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malfoy.compassApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -431,7 +431,7 @@
 				DEVELOPMENT_TEAM = F8WVNF9WH2;
 				INFOPLIST_FILE = pedometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.malfoy.pedometer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malfoy.compassApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
