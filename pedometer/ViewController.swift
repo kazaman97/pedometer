@@ -36,8 +36,20 @@ class ViewController: UIViewController {
             guard let data = pedometerData else {
                 return
             }
-            let mystep = data.numberOfSteps
-            self.stepsLabel.text = "\(mystep)歩"
+            DispatchQueue.main.async {
+                // 歩数表示
+                let mystep = data.numberOfSteps
+                self.stepsLabel.text = "\(mystep)歩"
+                print(mystep)
+                
+                if Int(mystep) < 51 {
+                    self.statusLabel.text = "運動不足です！"
+                } else if Int(mystep) > 50 && Int(mystep) < 100 {
+                    self.statusLabel.text = "もっと歩きましょ！"
+                } else {
+                    self.statusLabel.text = "頑張りました！"
+                }
+            }
         })
     }
     
